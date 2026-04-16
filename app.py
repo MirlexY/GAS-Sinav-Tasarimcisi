@@ -42,7 +42,7 @@ class UpdateThread(QThread):
     def run(self):
         try:
             # GitHub'daki son sürümü kontrol et (Release üzerinden)
-            repo_url = "https://api.github.com/repos/habibdogan/GAS-Sinav-Tasarimcisi/releases/latest"
+            repo_url = "https://api.github.com/repos/MirlexY/GAS-Sinav-Tasarimcisi/releases/latest"
             response = requests.get(repo_url, timeout=5)
             if response.status_code == 200:
                 data = response.json()
